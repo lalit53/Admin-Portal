@@ -5,6 +5,7 @@
             <th>Product Code</th>
             <th>Product Name</th>
             <th>Product Price</th>
+            <th>Image</th>
             <!-- <th>Actions</th> -->
         </tr>
     </thead>
@@ -13,7 +14,10 @@
             <td>{{rowIndex+1}}</td>
             <td>{{product1.code}}</td>
             <td>{{product1.name}}</td>
-            <td>{{product1.price}}</td>
+            <td>
+                <img src="{{product1.image}}" width="180" height="230">
+            </td>
+            <td>${{product1.price}}</td>
             <td>
                 <!-- <a class="btn btn-secondary" [routerLink]="['/product-detail', product1._id]">View Details</a> -->
             </td>
